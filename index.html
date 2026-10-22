@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Nguyễn Lê Hưng – Frontend Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Nguyễn Lê Hưng" />
+  <title>Nguyễn Lê Hưng · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">Nguyễn Lê Hưng</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Nguyễn Lê Hưng</h1>
+          <p class="hero-role">Frontend Developer &amp; UI Enthusiast</p>
+          <p class="hero-desc">
+            Tôi xây dựng giao diện web khiến mọi người dễ tiếp cận và responsive.
+            Tốt nghiệp ngành Công nghệ thông tin, yêu thích HTML/CSS ngữ nghĩa
+            và trải nghiệm người dùng một cách tối ưu.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="./assets/img/avata.jpg"
+            alt="Ảnh đại diện của Nguyễn Lê Hưng"
+            width="200" height="200" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">CSS3 / Flexbox / Grid</li>
+          <li class="skill-chip">JavaScript (ES6+)</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">Git &amp; GitHub</li>
+          <li class="skill-chip">Figma / Wireframe</li>
+          <li class="skill-chip">Agile / Scrum
+          <li class="skill-chip">Problem Solving</li>
+          <li class="skill-chip">Teamwork</li>
+          <li class="skill-chip">Web Performance / Lighthouse</li>
+          <li class="skill-chip">Basic Seo</li>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm mà tôi đã làm ra.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+            src="./assets/img/ava.jpg"
+              alt="Ảnh minh họa dự án Ứng dụng dự báo thời tiết" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ứng dụng dự báo thời tiết</h3>
+              <p class="card-desc">
+                Tra cứu thời tiết thời gian thực theo vị trí, hiển thị dự báo nhiều ngày và giao diện đổi màu theo nhiệt độ.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/av.jpg"
+              alt="Ảnh minh họa dự án Giao diện cửa hàng E-commerce" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Giao diện cửa hàng E-commerce</h3>
+              <p class="card-desc">
+                Trang bán hàng tương tác với bộ lọc sản phẩm, tìm kiếm từ khóa, giỏ hàng động và lưu đơn hàng vào LocalStorage.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Flexbox</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="./assets/img/avat.jpg"
+            alt="Ảnh minh họa dự án Dashboard quản lý chi tiêu" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Dashboard quản lý chi tiêu</h3>
+              <p class="card-desc">
+                Bảng theo dõi chi cá nhân tích hợp biểu đồ thống kê trực quan và phân loại danh mục chi tiêu .
+              </p>
+              <ul class="tag-list">
+                <li>API</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="./assets/img/avatar.jpg"
+              alt="Ảnh minh họa dự án Blog cá nhân" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Blog Cá Nhân</h3>
+              <p class="card-desc">
+                Blog tĩnh với bố cục dạng lưới, hỗ trợ đọc tốt trên mọi thiết bị.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="./assets/img/avata.jpg"
+            alt="Ảnh minh họa dự án Bài học cuộc sống" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Bài học cuộc sống</h3>
+              <p class="card-desc">
+                học về mọi sự vật sự việc trong cuộc sống này.
+              </p>
+              <ul class="tag-list">
+                <li>API</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-sub">Mở cho các cơ hội thực tập ở các doanh nghiệp; việc làm Frontend.</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a href="mailto:nguyenleh839@gmail.com">nguyenleh839@gmail.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="#">github.com/hung09122</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a href="#">linkedin.com/in/nguyenlehung</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nguyễn Lê Hưng. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+<style>
+        input {
+            padding: 20px;
+            border: 20px solid lightgrey
+            border-radius: 30px;
+            outline: none !important;
+        }
+        input:focus {border-color: rgb(49, 218, 77);}
+        input:invalid {border-color: red;}
+        input:valid {border-color: green;}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Liên hệ</legend>
+        <label for="email">Email</label>
+        <input type="email" required placeholder="Nhập email">
+        <button type="submit">Gửi</button>
+    </fieldset>
+    <style>
+        .a {
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            transform: translateX(100%);
+        }
+        .b {
+            width: 100px;
+            height: 50px;
+            margin: 200px;
+            background-color: green;
+            transform: scale(1.5);
+        }
+        .c {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            transform: rotateX(20deg);
+        }
+        .d {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            transform: skewX(20deg);
+        }
+    </style>
+    <style>
+        .box {
+            width: 50px;height: 50px;background-color: red;Transition: all 3s ease-in-out;
+        }
+        .box:hover {
+            width: 200px;height: 200px;background-color: orange;Transition: all 3s ease-in-out;
+        }
+    </style>
+    <div class="box"></div>
+     <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            position: relative; 
+            animation-duration: 4s;
+            animation-name: MyAnimation;
+            background-color: red;
+        }
+
+        @keyframes MyAnimation {
+            0%   {background-color: red; left: 0px; top: 0px;}
+            25%  {background-color: yellow; left: 200px; top: 0px;} 
+            50%  {background-color: blue; left: 200px; top: 200px;}0
+            75%  {background-color: green; left: 0px; top: 200px;} 
+            100% {background-color: red; left: 0px; top: 0px;} 
+        }
+    </style>
+</body>
+
+</html>

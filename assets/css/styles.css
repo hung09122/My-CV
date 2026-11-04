@@ -12,15 +12,15 @@
    ========================================================================== */
 :root {
   /* --- Bảng màu --- */
-  --color-primary: #2563eb;      /* xanh thương hiệu */
-  --color-primary-dark: #1d4ed8;
-  --color-accent: #7c3aed;       /* tím nhấn */
-  --color-text: #a5463a;         /* chữ chính */
-  --color-text-soft: #c23737;    /* chữ phụ */
-  --color-bg: #518dbe;           /* nền trang */
-  --color-surface: #968bc7;      /* nền vùng nhấn */
-  --color-border: #5689cc;       /* viền */
-  --color-chip: #b7dde4;         /* nền chip kỹ năng */
+  --color-primary: #f97316;      /* xanh thương hiệu */
+  --color-primary-dark: #c2410c;
+  --color-accent: #06b6d4;       /* tím nhấn */
+  --color-text: #0f172a;         /* chữ chính */
+  --color-text-soft: #475569;    /* chữ phụ */
+  --color-bg: #fff7ed;           /* nền trang */
+  --color-surface: #d8bdd8;      /* nền vùng nhấn */
+  --color-border: #fed7aa;       /* viền */
+  --color-chip: #ffedd5;         /* nền chip kỹ năng */
 
   /* --- Typography --- */
   --font-base: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
